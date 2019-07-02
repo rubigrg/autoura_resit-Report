@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+
+
+<html>
+
+    <head>
+        <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    </head>
+
+    <body ng-app="myApp" style="background-color: midnightblue;">
+    
+        <br>
+        <br>
+        
+        <a href="food.htm" id="back">Back to food page...</a>
+        
+        <br>
+        <br>
+        
+        <table>
+            
+            <tr>
+                <th style="width: 500px;">
+                <img src="images/greggss.png" style="width:700px; height: 350px;">
+                </th>
+            </tr>
+            
+            <tr>
+                <th style="width: 500px;">
+                <p style="color: white;">Greggs plc is the largest bakery chain in the United Kingdom. It specialises in savoury products such as bakes, sausage rolls and sandwiches and sweet items including doughnuts and vanilla slices. It is headquartered in Newcastle upon Tyne.</p>
+                    
+                    <br>
+                
+                <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="registerbtn">Book a table</button>
+
+                        <div id="id01" class="modal">
+
+                          <form class="modal-content animate" action="/action_page.php">
+                            <div class="imgcontainer">
+                              <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                            </div>
+
+                            <div class="container">
+                              <label for="uname" style="color: black;"><b>Full Name:</b></label>
+                              <input type="text" name="uname" required>
+
+                              <label for="uname" style="color: black;"><b>Date</b></label>
+                              <input type="date" name="psw" required>
+                            
+                             <label for="uname" style="color: black;"><b>Time</b></label>
+                              <input type="time" name="psw" required>
+                                
+                                <br><br>
+
+                              <button type="submit">Book!</button>
+                            </div>
+
+                            <div class="container" style="background-color:#f1f1f1">
+                              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+
+                            </div>
+
+                            </form></div>
+                    <br>
+                    <br>
+                </th>
+            </tr>
+            <br>
+            <br>
+            <tr>
+                <th style="width: 500px;">
+                    <div class="mapouter"><div class="gmap_canvas"><iframe width="700" height="350" id="gmap_canvas" src="https://maps.google.com/maps?q=greggs&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div></div>
+                </th>
+            </tr>
+            
+            <tr>
+                <th style="width: 500px;">
+                <span style="color: white; font-size: 28px;">User Ratings:</span><br>
+    <span style="color: yellow;">4.5</span> <span class="fa fa-star checked" style="color:yellow;"></span>
+    <span class="fa fa-star checked" style="color:yellow;"></span>
+    <span class="fa fa-star checked" style="color:yellow;"></span>
+    <span class="fa fa-star checked" style="color:yellow;"></span>
+    <span class="fa fa-star-half-o" style="color:yellow;"></span>
+        <br>
+        <br>
+        
+   <div class="chip">
+  <img src="images/man.png" width="96" height="96">
+  <span class="names">John Doe</span>
+       <p style="color:white; border-bottom: 2px solid white;">- Staff are super friendly and their pasties and toasties are always good. </p>
+      </div>
+      <br>
+      <br>
+      <br>
+      
+      <div class="chip">
+  <img src="images/img_357118.png" width="96" height="96" background="white">
+  <span class="names"> Whateveruser19</span>
+          <p style="color:white; margin-left: 4%; width: 500px;">- The pizza slices are too die for and are amazing for the price staff could be a little more cheerful.</p>
+      </div> 
+                </th>
+            </tr>
+            
+            <tr>
+                <th>
+                
+                </th>
+            </tr>
+            
+        </table>
+        
+    </body>
+    
+
+</html>

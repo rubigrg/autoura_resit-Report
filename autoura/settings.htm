@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/responsive.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+<body ng-app="myApp" style="background-color: darkblue;">
+    
+    <div class="topnav" id="myTopnav">
+  <a href="main.htm" id="line"><i class="fa fa-home" style="font-size:33px"></i> Home</a>
+  <a href="search.htm" id="line"><i class="fa fa-search" style="font-size:33px"></i> Search</a>
+  <a href="settings.htm" class="active" id="line"> <i class="fa fa-envelope" style="font-size:33px"></i> Contact</a>
+  <a href="login.html" id="logout"><i class="fa fa-sign-out" style="font-size:33px"></i> LOGOUT</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+   
+    
+<div ng-view>
+    
+    
+    <div class="container">
+  <div style="text-align:center">
+    <h2 style="text-decoration: underline;">Contact Us</h2>
+    <p style="text-align: center;">Swing by for a cup of coffee, or leave us a message:</p>
+  </div>
+  <div class="rowe">
+    <div class="columne">
+      <img src="images/contact.png" style="width:100%">
+    </div>
+    <div class="columne">
+      <form action="/action_page.php">
+        <label for="fname" style="color:white">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname" style="color:white">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="country" style="color:white">Country</label>
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+          <option value="usa">UK</option>
+        </select>
+        <label for="subject" style="color:white">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+ 
+</div>
+
+
+</body>
+</html>

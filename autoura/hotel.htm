@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+        <script src="js/viewinfo.js"></script>
+        <script src="js/book.js"></script>
+
+    </head>
+    
+<body ng-app="myApp" style="background-color: midnightblue;">
+    
+    <div class="topnav" id="myTopnav">
+  <a href="main.htm" id="line"><i class="fa fa-home" style="font-size:33px"></i> Home</a>
+  <a href="search.htm" id="line"><i class="fa fa-search" style="font-size:33px"></i> Search</a>
+  <a href="settings.htm" id="line"> <i class="fa fa-envelope" style="font-size:33px"></i> Contact</a>
+  <a href="login.html" id="logout"><i class="fa fa-sign-out" style="font-size:33px"></i> LOGOUT</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<br>
+<br>
+<br>
+   
+    
+<div ng-view>
+    
+    <h1 style="color: white; text-align:center;">One Hotel available:</h1>
+ 
+     <div class="card">
+                    <div id="title">Harbour Hotel Southampton</div><br>
+                    <img src="images/harbour-hotel-southampton.jpeg" style="width:100%;"><br>
+                    <h5>Bright rooms & suites with marina views, plus a hip rooftop restaurant/bar, an indoor pool & a spa. Waterside area with smart international eateries around a marina & the Harbour Lights Picture House.</h5>
+                    <p class="price">£195 for 2 nights</p>
+                
+                    <p class="flip" onclick="myFunction()">View Information</p>
+         
+                    <div id="panel">
+                        
+                        <br>
+                        <br>
+                        
+                    <span style="font-size: 20px;">User Ratings:</span>
+                        <br><br>
+                    <span style="color: yellow; font-size: 18px; margin-right: 5%;">4.5</span>
+                        <br><div class="rate">
+                            <i class="fa fa-star" style="font-size:24px; color:yellow; "></i><i class="fa fa-star" style="font-size:24px; color:yellow; "></i><i class="fa fa-star" style="font-size:24px; color:yellow; "></i><i class="fa fa-star" style="font-size:24px; color:yellow; "></i><i class="fa fa-star-half-o" style="font-size:24px; color:yellow; "></i>
+                        </div>
+                        <br>
+                        
+                        <div class="reviews">
+                            
+                        </div>
+                        
+                        <div class="mapouter"><div class="gmap_canvas"><iframe width="350" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=harbour%20hotel%20southampton&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>
+                        
+                    </div>
+                        <br>
+                        <br>
+                        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="registerbtn">Book this hotel</button>
+
+                        <div id="id01" class="modal">
+
+                          <form class="modal-content animate" action="/action_page.php">
+                            <div class="imgcontainer">
+                              <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                            </div>
+
+                            <div class="container">
+                              <label for="uname" style="color: black;"><b>Full Name:</b></label>
+                              <input type="text" placeholder="Enter Username" name="uname" required>
+                                    <br>
+                              <label for="uname" style="color: black;"><b>Date</b></label>
+                              <input type="date" name="psw" required>
+                                <br>
+                                <br>
+                                
+                            <label for="uname" style="color: black;"><b>Adults:</b></label>
+                              <input type="number" name="psw" required>  
+                                <br>
+                                <br>
+                                
+                                <label for="uname" style="color: black;"><b>Children:</b></label>
+                              <input type="number" name="psw" required> 
+                                <br>
+                                <br>
+                                
+                                <label for="uname" style="color: black;"><b>Check in time:</b></label>
+                              <input type="time" name="psw" required>  
+                                <br>
+                                <br>
+                                
+                                <label for="uname" style="color: black;"><b>Check out time:</b></label>
+                              <input type="time" name="psw" required>  
+                                
+                                <br><br>
+
+                              <button type="submit">Book!</button>
+                            </div>
+
+                            <div class="container" style="background-color:#f1f1f1">
+                              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+
+                            </div>
+
+                            </form>
+                        
+         </div>
+                </div>
+    
+    
+    
+    
+</div>
+
+
+</body>
+</html>

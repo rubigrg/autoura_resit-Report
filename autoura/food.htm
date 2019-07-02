@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+
+<html>
+
+
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="js/book.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+    </head>
+    
+    <body ng-app="myApp" style="background-color: midnightblue;">
+    
+        <div class="topnav" id="myTopnav">
+  <a href="main.htm" id="line"><i class="fa fa-home" style="font-size:33px"></i> Home</a>
+  <a href="search.htm" id="line"><i class="fa fa-search" style="font-size:33px"></i> Search</a>
+  <a href="settings.htm" id="line"> <i class="fa fa-envelope" style="font-size:33px"></i> Contact</a>
+  <a href="login.html" id="logout"><i class="fa fa-sign-out" style="font-size:33px"></i> LOGOUT</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+        </div>
+    
+        <br>
+        <br>
+        <br>
+        
+        <header>Top Fast Food for you:</header>
+        
+        <br>
+    
+    <div class="row1">
+  <div class="column1" style="background-color: gray;height: 60%; border-right: 2px solid midnightblue;">
+    <a href="greggs.htm"><img src="images/greggs.jpg" class="food" style="width: 100%;"></a>
+      <p>Greggs plc is the largest bakery chain in the United Kingdom. It specialises in savoury products such as bakes, sausage rolls and sandwiches and sweet items including doughnuts and vanilla slices. It is headquartered in Newcastle upon Tyne.</p>
+  </div>
+  <div class="column1" style="background-color: gray;height:60%;border-right: 2px solid midnightblue;">
+    <a href="#"><img src="images/mcdoanlds.jpg" class="food" style="width:100%;"></a>
+    <p>McDonald's is an American fast food company, founded in 1940 as a restaurant operated by Richard and Maurice McDonald, in San Bernardino, California, United States.</p>
+      <br>
+      
+  </div>
+  <div class="column1" style="background-color: gray;height: 60%;">
+    <a href="#"><img src="images/burger-king.jpg" class="food" style="width: 100%;"></a>
+    <p>DescriptionBurger King is an American global chain of hamburger fast food restaurants. Headquartered in the unincorporated area of Miami-Dade County, Florida, the company was founded in 1953 as Insta-Burger King, a Jacksonville, Florida–based restaurant chain.</p>
+  </div>
+</div>
+        <br>
+        <br>
+        <br>
+        
+        <header>Top Restaurants for you:</header>
+        
+        <br>
+    
+    <div class="row1">
+  <div class="column1" style="background-color:#aaa;height: 50%;">
+    <a href="#"><img src="images/wagamama.jpg" class="food" style="width: 100%;"></a>
+      
+      <br>
+      
+      <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="registerbtn">Book this hotel</button>
+      
+      <div id="id01" class="modal">
+
+                          <form class="modal-content animate" action="/action_page.php">
+                            <div class="imgcontainer">
+                              <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                            </div>
+                            
+                <div class="container">
+                    
+                    <h2 style="color: black;">Information:</h2>
+                    <p style="color: black;">Japanese chain restaurant where steaming rice and noodles are whisked to long communal tables.
+                    <br>
+                    ‘kaizen’, meaning ‘good change’ is the philosophy that sits right at our heart. it shapes every dish we create, and pushes us to find better ways in all that we do. we’re restless spirits.
+                    </p>
+                    
+                    <span style="color: orange; font-size: 18px; margin-right: 5%;">User Ratings <br>4.5</span>
+                        <br><div class="rate">
+                            <i class="fa fa-star" style="font-size:24px; color:orange; "></i><i class="fa fa-star" style="font-size:24px; color:orange; "></i><i class="fa fa-star" style="font-size:24px; color:orange; "></i><i class="fa fa-star" style="font-size:24px; color:orange; "></i><i class="fa fa-star-half-o" style="font-size:24px; color:orange; "></i>
+                        </div>
+                    
+                    <br>
+                    
+                    <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=wagamama%2C%20london&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                    
+                    <br>
+                    <br>
+                    <br>
+                        
+                        <span style="color: darkblue; font-weight: bold; font-size: 25px;">Book a table at this restaurant:</span>
+                        
+                        <br>
+                        <br>
+                              <label for="uname" style="color: black;"><b>Full Name:</b></label>
+                              <input type="text" placeholder="Enter Username" name="uname" required>
+                                    <br>
+                              <label for="uname" style="color: black;"><b>Date</b></label>
+                              <input type="date" name="psw" required>
+                                <br>
+                                <br>
+                                
+                            <label for="uname" style="color: black;"><b>Adults:</b></label>
+                              <input type="number" name="psw" required>  
+                                <br>
+                                <br>
+                                
+                                <label for="uname" style="color: black;"><b>Children:</b></label>
+                              <input type="number" name="psw" required> 
+                                <br>
+                                <br>
+                                
+                                <label for="uname" style="color: black;"><b>Time:</b></label>
+                              <input type="time" name="psw" required>  
+                                
+                                <br><br>
+
+                              <button type="submit">Book!</button>
+                            </div>
+
+                            <div class="container" style="background-color:#f1f1f1">
+                              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+
+                            </div>
+                    </div></div>
+                            </form>              
+  </div>
+      </div>
+  <div class="column1" style="background-color:#bbb;height: 50%;">
+    <h2>Column 2</h2>
+    <p>Some text..</p>
+  </div>
+  <div class="column1" style="background-color:#ccc;height: 50%;">
+    <h2>Column 3</h2>
+    <p>Some text..</p>
+  </div>
+</div>
+    
+    </body>
+
+</html>
