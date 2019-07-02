@@ -39,8 +39,6 @@ This project report undertakes an industry “Live Brief” provided by Autoura.
 
 <li><<a href="">AE1_Documentation.md</a> 
 </li>
-  <li><a href="">Autoura Prototype</a>
-</li>
 <li><a href="">Autoura Wireframe</a>
 </li>
 <li><a href="">User Research Survey</a> 
